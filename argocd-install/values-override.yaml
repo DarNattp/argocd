@@ -47,6 +47,9 @@ server:
       syncPolicy:
         syncOptions:
         - CreateNamespace=true
+        automated:
+          selfHeal: true
+          prune: true        
     - name: argocd-apps
       namespace: argocd
       destination:
