@@ -49,7 +49,7 @@ server:
         - CreateNamespace=true
         automated:
           selfHeal: true
-          prune: false        
+          prune: true        
     - name: argocd-apps
       namespace: argocd
       destination:
