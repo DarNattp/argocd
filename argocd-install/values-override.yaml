@@ -1,6 +1,21 @@
 ## ArgoCD configuration
 ## Ref: https://github.com/argoproj/argo-cd
 ##
+## Global
+global:
+  image:
+    repository: quay.io/argoproj/argocd
+    tag: v2.10.0
+    imagePullPolicy: IfNotPresent
+  securityContext: {}
+  #  runAsUser: 999
+  #  runAsGroup: 999
+  #  fsGroup: 999
+  imagePullSecrets: []
+  hostAliases: []
+  # - ip: 10.20.30.40
+  #   hostnames:
+  #   - git.myhostname
 ## Server
 server:
   ## ArgoCD config
