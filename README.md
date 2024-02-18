@@ -2,6 +2,7 @@
 
 **Table of Contents**
 
+- [Self Managed Argo CD - App of Everything](#self-managed-argo-cd---app-of-everything)
 - [Introduction](#introduction)
 - [Clone Repository](#clone-repository)
 - [Create Local Kubernetes Cluster](#create-local-kubernetes-cluster)
@@ -10,6 +11,7 @@
 - [Intall Argo CD Using Helm](#intall-argo-cd-using-helm)
 - [Demo With Sample Application](#demo-with-sample-application)
 - [Cleanup](#cleanup)
+- [SSH Key](#ssh-key)
 
 # Introduction
 This project aims to install a self-managed Argo CD using the App of App pattern. Full instructions and explanation can be found in the Medium article [Self Managed Argo CD — App Of Everything](https://medium.com/devopsturkiye/self-managed-argo-cd-app-of-everything-a226eb100cf0).
@@ -251,4 +253,8 @@ git rm argocd-apps/sample-app.yaml
 git rm argocd-appprojects/sample-project.yaml
 git commit -m "Remove app and project."
 git push
+```
+# SSH Key
+```
+kubectl create secret generic argocd-repo-ssh-key --from-file=sshPrivateKey=/path/to/your/argocd/private/key -n argocd
 ```

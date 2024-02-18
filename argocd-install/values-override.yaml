@@ -24,7 +24,15 @@ server:
   config:
     repositories: |
       - type: git
-        url: https://github.com/DarNattp/argocd.git
+        url: git@gitlab.creativebox.dev:creativebox/gitops/argocd.git
+        sshPrivateKeySecret:
+          name: argocd-repo-ssh-key
+          key: sshPrivateKey
+      - type: git
+        url: git@gitlab.creativebox.dev:creativebox/gitops/app-dev.git
+        sshPrivateKeySecret:
+          name: app-dev-repo-ssh-key
+          key: sshPrivateKey        
       - name: argo-helm
         type: helm
         url: https://argoproj.github.io/argo-helm
@@ -42,7 +50,7 @@ server:
           - values.yaml
           - ../values-override.yaml
         path: argocd-install/argo-cd
-        repoURL: https://github.com/DarNattp/argocd.git
+        repoURL: git@gitlab.creativebox.dev:creativebox/gitops/argocd.git
         targetRevision: HEAD
       syncPolicy:
         syncOptions:
@@ -58,7 +66,7 @@ server:
       project: argocd
       source:
         path: argocd-apps
-        repoURL: https://github.com/DarNattp/argocd.git
+        repoURL: git@gitlab.creativebox.dev:creativebox/gitops/argocd.git
         targetRevision: HEAD
         directory:
           recurse: true
@@ -75,7 +83,7 @@ server:
       project: argocd
       source:
         path: argocd-appprojects
-        repoURL: https://github.com/DarNattp/argocd.git
+        repoURL: git@gitlab.creativebox.dev:creativebox/gitops/argocd.git
         targetRevision: HEAD
         directory:
           recurse: true
