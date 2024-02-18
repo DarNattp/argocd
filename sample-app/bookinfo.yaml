@@ -109,6 +109,7 @@ metadata:
   name: ratings-v1
   labels:
     app: ratings
+    test: applying
     version: v1
 spec:
   replicas: 1
