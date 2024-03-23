@@ -27,7 +27,12 @@ server:
         url: git@gitlab.creativebox.dev:creativebox/gitops/argocd.git
         sshPrivateKeySecret:
           name: argocd-repo-ssh-key
-          key: sshPrivateKey    
+          key: sshPrivateKey
+      - type: git
+        url: git@gitlab.creativebox.dev:creativebox/gitops/gitops-dev.git
+        sshPrivateKeySecret:
+          name: argocd-repo-ssh-key
+          key: sshPrivateKey            
       - name: argo-helm
         type: helm
         url: https://argoproj.github.io/argo-helm
