@@ -10,7 +10,7 @@ spec:
   project: sample-project
   source:
     path: sample-app/
-    repoURL: git@gitlab.creativebox.dev:creativebox/gitops/argocd.git
+    repoURL: git@gitlab.creativebox.dev:creativebox/gitops/gitops-dev.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
