@@ -5,7 +5,7 @@
 global:
   image:
     repository: quay.io/argoproj/argocd
-    tag: v2.10.0
+    tag: v2.10.4
     imagePullPolicy: IfNotPresent
   securityContext: {}
   #  runAsUser: 999
