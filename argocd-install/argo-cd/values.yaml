@@ -919,6 +919,7 @@ configs:
         gitlab.creativebox.dev ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCXLWeKSgZu7R+vGucAeYuGWhjY4ixOCn81m5nB2p6ZIt7BZczp0N4JcJtHCuFT0SNZ37+Izfo1lvRMJWh3xkHouXnNeYRbg8qNXYqpftn4MbOTjru6zxjsyG68njfwVXQnKOF+ZMMB8iUYoiIHjvZKu703fDXbNB60CbykoZnZ5TWfDhn1piCY12RMrVkJI6DJCv3zp+8oGJsEL6ltOcfPtRaOE43oMsPfk1VhNAUt42moTg7ydMusJXZoRcuj3bxXwGUAV4dDgbXkd5IlBhGrqHfAam7GhX6gYhl7fxDqy9X46MW8hywk4Jzzf7d1HSBucoGURt41cNYOhkr/J29qaeomivsOXaI+tXBSip3rJxs0qlR3FPSjCEEQNeXlEZLzwGNyvBjgMMyTtfLvi7r1Ytf6Gifkyw2atoBIVcYZlQileRQ7nh5U77h0CfHWGylpOQPP9Vl4EESdTDTn9HFInPbXFJl9vkodeboqaMlFIghbXCnk1eoYsT+pYlRCWSM=
         gitlab.creativebox.dev ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCKLTw4vUhI7oAFAVVPkKJURfBAXTYxLt3fuf1Rxjj3OO9qtWGQfeH8MEOw7gwwmzVWWAouYdT8dck6SIVuEVio=
         gitlab.creativebox.dev ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDeXtY+xxDDSzkA/5w8HC8Ei4RCS8uII5Eem/2IV3atq
+        second-gitlab.xxxcreativebox.dev ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDeXtY+xxDDSzkA/5w8HC8Ei4RCS8uII5Eem/2IV3atq
   tlsCertsAnnotations: {}
   tlsCerts:
     {}
