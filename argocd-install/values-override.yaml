@@ -124,7 +124,7 @@ server:
     loadBalancerIP: ""
     loadBalancerSourceRanges: []
     externalIPs: []
-config:
+configs:
   knownHosts:
     data:
       ssh_known_hosts: |
