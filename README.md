@@ -1,14 +1,9 @@
----
-runme:
-  id: 01HTZB3X2T5ZRVZJQQES79V0RX
-  version: v3
----
-
 # Self Managed Argo CD - App of Everything
 
 **Table of Contents**
 
 - [Self Managed Argo CD - App of Everything](#self-managed-argo-cd---app-of-everything)
+- [First install ssh key for argocd access git origin repo](#first-install-ssh-key-for-argocd-access-git-origin-repo)
 - [Introduction](#introduction)
 - [Clone Repository](#clone-repository)
 - [Create Local Kubernetes Cluster](#create-local-kubernetes-cluster)
