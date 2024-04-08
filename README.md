@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HTZB3X2T5ZRVZJQQES79V0RX
+  version: v3
+---
+
 # Self Managed Argo CD - App of Everything
 
 **Table of Contents**
@@ -40,7 +46,7 @@ This project aims to install a self-managed Argo CD using the App of App pattern
 
 # Clone Repository
 
-Clone kurtburak/argocd repository to your local device
+Clone kurtburak/argocd repository to your local device.
 
 ```sh {"id":"01HT74ZB1CX0SQ7E53S09N6JSN"}
 git clone https://github.com/kurtburak/argocd.git
