@@ -60,7 +60,7 @@ Intall kind.
 brew install kind
 ```
 
-Create local Kubernetes Cluster using kind
+Create local Kubernetes Cluster using kind.
 
 ```sh {"id":"01HT74ZB1CX0SQ7E53S6AMAQG9"}
 kind create cluster — name my-cluster
