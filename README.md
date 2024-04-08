@@ -86,7 +86,7 @@ argocd/
 
 # Create App Of Everything Pattern
 
-Open *argocd-install/values-override.yaml* with your favorite editor and modify related values.
+Open *argocd-install/values-override.yaml* with your favorite editor and modify related values...
 
 ```sh {"id":"01HT74ZB1CX0SQ7E53SD7ZG8WA"}
 vi argocd-install/values-override.yaml
