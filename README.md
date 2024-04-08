@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HTYHY2Z9D7X1GZZ2M8RDWJ29
-  version: v3
----
-
 # Self Managed Argo CD - App of Everything
 
 **Table of Contents**
