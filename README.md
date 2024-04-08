@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HTYHY2Z9D7X1GZZ2M8RDWJ29
+  version: v3
+---
+
 # Self Managed Argo CD - App of Everything
 
 **Table of Contents**
@@ -60,7 +66,7 @@ Create local Kubernetes Cluster using kind
 kind create cluster — name my-cluster
 ```
 
-Check cluster is running and healthy
+Check cluster is running and healthy.
 
 ```sh {"id":"01HT74ZB1CX0SQ7E53S8WHG9CG"}
 kubectl cluster-info — context kind-my-cluster
