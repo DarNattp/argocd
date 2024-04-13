@@ -38,6 +38,7 @@ server:
         sshPrivateKeySecret:
           name: argocd-repo-ssh-key
           key: sshPrivateKey          
+        insecure: true
       - name: argo-helm
         type: helm
         url: https://argoproj.github.io/argo-helm
