@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: go-micro-project
   source:
-    path: go-micro/
+    path: go-micro/adservice*
     repoURL: git@github.com:DarNattp/gitops-devsecops.git
     targetRevision: HEAD
   syncPolicy:
