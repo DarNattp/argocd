@@ -8,7 +8,7 @@ spec:
   - group: '*'
     kind: '*'
   destinations:
-  - namespace: go-micro-project
+  - namespace: go-micro
     server: https://kubernetes.default.svc
   orphanedResources:
     warn: false
