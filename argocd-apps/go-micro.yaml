@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: adservice
+  name: go-micro
   namespace: argocd
 spec:
   destination:
@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: go-micro-project
   source:
-    path: go-micro/adservice.yaml
+    path: go-micro/
     repoURL: git@github.com:DarNattp/gitops-devsecops.git
     targetRevision: HEAD
   syncPolicy:
