@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: go-micro
+  name: adservice
   namespace: argocd 
 spec:
   destination:
