@@ -12,8 +12,6 @@ spec:
     path: go-micro/shippingservice
     repoURL: git@github.com:DarNattp/gitops-devsecops.git
     targetRevision: HEAD
-    directory:
-      recurse: false    
   syncPolicy:
     syncOptions:
     - CreateNamespace=true

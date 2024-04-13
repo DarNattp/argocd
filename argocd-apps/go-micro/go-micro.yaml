@@ -11,9 +11,7 @@ spec:
   source:
     path: go-micro/go-micro
     repoURL: git@github.com:DarNattp/gitops-devsecops.git
-    targetRevision: HEAD
-    directory:
-      recurse: false    
+    targetRevision: HEAD 
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
