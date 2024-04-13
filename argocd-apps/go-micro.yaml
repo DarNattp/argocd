@@ -11,7 +11,7 @@ spec:
   source:
     path: go-micro/adservice.yaml
     repoURL: git@github.com:DarNattp/gitops-devsecops.git
-    targetRevision: HEADง
+    targetRevision: HEAD
     directory:
       recurse: false    
   syncPolicy:
