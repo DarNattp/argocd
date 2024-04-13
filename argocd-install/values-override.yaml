@@ -79,7 +79,7 @@ server:
           jsonnet: {}
       syncPolicy:
         automated:
-          selfHeal: true
+          selfHeal: false
           prune: true
     - name: argocd-appprojects
       namespace: argocd
