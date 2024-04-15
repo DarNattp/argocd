@@ -64,14 +64,14 @@ server:
         automated:
           selfHeal: true
           prune: true        
-    - name: argocd-apps
+    - name: go-micro-apps
       namespace: argocd
       destination:
         namespace: argocd
         server: https://kubernetes.default.svc
       project: argocd
       source:
-        path: argocd-apps
+        path: argocd-apps/go-micro
         repoURL: git@gitlab.creativebox.dev:creativebox/gitops/argocd.git
         targetRevision: HEAD
         directory:
