@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: redis-cart
+  name: go-micro-redis-cart
   namespace: argocd 
 spec:
   destination:

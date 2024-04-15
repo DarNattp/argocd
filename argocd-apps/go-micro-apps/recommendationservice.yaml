@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: recommendationservice
+  name: go-micro-recommendationservice
   namespace: argocd 
 spec:
   destination:

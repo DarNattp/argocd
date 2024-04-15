@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: checkoutservice
+  name: go-micro-checkoutservice
   namespace: argocd 
 spec:
   destination:

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: paymentservice
+  name: go-micro-paymentservice
   namespace: argocd 
 spec:
   destination:

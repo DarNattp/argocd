@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: loadgenerator
+  name: go-micro-loadgenerator
   namespace: argocd 
 spec:
   destination:

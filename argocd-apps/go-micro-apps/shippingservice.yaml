@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: shippingservice
+  name: go-micro-shippingservice
   namespace: argocd 
 spec:
   destination:
