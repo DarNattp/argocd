@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: productcatalogservice
+  namespace: argocd 
+spec:
+  destination:
+    namespace: devsecops
+    server: https://kubernetes.default.svc
+  project: devsecops-project
+  source:
+    path: devsecops/productcatalogservice
+    repoURL: git@github.com:DarNattp/gitops-devsecops.git
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: false
