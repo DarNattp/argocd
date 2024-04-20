@@ -79,8 +79,8 @@ server:
           jsonnet: {}
       syncPolicy:
         automated:
-          selfHeal: false
-          prune: true
+          selfHeal: true
+          prune: false
     - name: devsecops-apps
       namespace: argocd
       destination:
@@ -96,8 +96,8 @@ server:
           jsonnet: {}
       syncPolicy:
         automated:
-          selfHeal: false
-          prune: true          
+          selfHeal: true
+          prune: false          
     - name: argocd-appprojects
       namespace: argocd
       destination:
@@ -114,7 +114,7 @@ server:
       syncPolicy:
         automated:
           selfHeal: true
-          prune: true
+          prune: false
   additionalProjects: 
   - name: argocd
     namespace: argocd
