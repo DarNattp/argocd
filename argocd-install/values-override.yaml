@@ -28,6 +28,7 @@ server:
         sshPrivateKeySecret:
           name: argocd-repo-ssh-key
           key: sshPrivateKey
+        insecure: true
       - type: git
         url: git@gitlab.creativebox.dev:creativebox/gitops/gitops-dev.git
         sshPrivateKeySecret:
@@ -147,6 +148,8 @@ server:
     loadBalancerIP: ""
     loadBalancerSourceRanges: []
     externalIPs: []
+  extraArgs: 
+  - "--insecure"
 configs:
   knownHosts:
     data:
