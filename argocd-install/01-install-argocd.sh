@@ -6,8 +6,8 @@ if [ -z ${ARGOCD_NS+x} ];then
 fi
 
 if [ -z ${1+x} ]; then
-  VALUES_FILE="${DIRNAME}/argo-cd/values-override.yaml"
-  echo "INFO: Using default values file './argo-cd/values-override.yaml'"
+  VALUES_FILE="${DIRNAME}/argo-cd/values.yaml"
+  echo "INFO: Using default values file './argo-cd/values.yaml'"
 else
   if [ -f $1 ]; then
     echo "INFO: Using values file $1"
