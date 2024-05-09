@@ -5,12 +5,12 @@ metadata:
   namespace: argocd 
 spec:
   destination:
-    namespace: devsecops
+    namespace: micro
     server: https://kubernetes.default.svc
-  project: devsecops-project
+  project: micro-project
   source:
-    path: devsecops/recommendationservice
-    repoURL: git@github.com:DarNattp/gitops-devsecops.git
+    path: micro/recommendationservice
+    repoURL: git@github.com:DarNattp/gitops.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:

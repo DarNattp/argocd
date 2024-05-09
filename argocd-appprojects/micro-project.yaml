@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: devsecops-project
+  name: micro-project
   namespace: argocd
 spec:
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
   destinations:
-  - namespace: devsecops
+  - namespace: go-micro
     server: https://kubernetes.default.svc
   orphanedResources:
     warn: false
