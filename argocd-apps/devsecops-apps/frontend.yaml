@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: micro-project
   source:
-    path: micro/api-gateway
+    path: micro/frontend
     repoURL: git@github.com:DarNattp/gitops.git
     targetRevision: HEAD
   syncPolicy:
