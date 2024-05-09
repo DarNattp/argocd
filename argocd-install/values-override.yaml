@@ -30,6 +30,12 @@ server:
           key: sshPrivateKey
         insecure: true
       - type: git
+        url: git@github.com:DarNattp/gitops.git
+        sshPrivateKeySecret:
+          name: argocd-repo-ssh-key
+          key: sshPrivateKey
+        insecure: true
+      - type: git
         url: git@gitlab.creativebox.dev:creativebox/gitops/gitops-dev.git
         sshPrivateKeySecret:
           name: argocd-repo-ssh-key
