@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: adservice
+  namespace: argocd 
+spec:
+  destination:
+    namespace: micro
+    server: https://kubernetes.default.svc
+  project: micro-project
+  source:
+    path: micro/go-micro
+    repoURL: git@github.com:DarNattp/gitops.git
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: false
